@@ -1,0 +1,20 @@
+@import "../../../../scss/core/_variables.scss";
+@import "../../../../scss/core/_mixins.scss";
+//
+//
+//
+.b-text--banner {
+    h3 {
+        font-family: 'Arial-BoldMT';
+        font-size: 26px;
+        line-height: 28px;
+        margin-top: 0;
+        text-transform: uppercase;
+    }
+    p {
+        font-family: 'Arial-BoldMT';
+        font-size: 14px;
+        line-height: 15px;
+        margin-bottom: 10px;
+    }
+}

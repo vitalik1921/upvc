@@ -1,0 +1,43 @@
+@import "../../../../scss/core/_variables.scss";
+@import "../../../../scss/core/_mixins.scss";
+//
+//
+//
+.b-featured {
+    &__items {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    &__item {
+        display: inline-block;
+    }
+    &__link {
+        display: block;
+        text-decoration: none;
+        &__image {
+            display: block;
+            width: 290px;
+            height: 290px;
+            margin-bottom: 30px;
+        }
+        &__title {
+            font-family: 'Arial-BoldMT';
+            font-size: 25px;
+            line-height: 28px;
+            color: #000;
+            text-decoration: none;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 16px;
+            color: #000;
+            text-decoration: none;
+            text-align: center;
+        }
+    }
+}

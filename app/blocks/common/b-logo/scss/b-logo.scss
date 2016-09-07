@@ -1,0 +1,14 @@
+@import "../../../../scss/core/_variables.scss";
+@import "../../../../scss/core/_mixins.scss";
+//
+//
+//
+.b-logo {
+    &__link {
+        display: block;
+        width: 168px;
+        height: 67px;
+        background: url('../img/logo.svg') 0 0 no-repeat;
+        background-size: contain;
+    }
+}

@@ -1,0 +1,23 @@
+@import "../../../../scss/core/_variables.scss";
+@import "../../../../scss/core/_mixins.scss";
+//
+//
+//
+.b-banner {
+	&__container {
+		@include container-fixed;
+	}
+	&__left {
+		@include hide-text();
+		width: 548px;
+		height: 317px;
+		background: url('../img/slogan.svg') 0 0 no-repeat;
+		background-size: contain;
+	}
+	&__right {
+		width: 598px;
+		height: 317px;
+		background: rgba(255,255,255,0.8);
+		padding: 20px;
+	}
+}

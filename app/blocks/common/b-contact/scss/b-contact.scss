@@ -1,0 +1,34 @@
+@import "../../../../scss/core/_variables.scss";
+@import "../../../../scss/core/_mixins.scss";
+//
+//
+//
+.b-contact {
+    font-size: 0;
+    display: flex;
+    &__label {
+        font-size: 12px;
+        color: #EE2D30;
+    }
+    &__email {
+        font-size: 12px;
+        color: #fff;
+        text-decoration: none;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-right: 1px solid #EE2D30;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__phone {
+        font-size: 12px;
+        color: #fff;
+        text-decoration: none;
+        padding-left: 5px;
+        padding-right: 5px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+//dropdown animation
+@-webkit-keyframes drop-down-animation {
+    0% {
+        @include opacity(0);
+        @include transition(visibility 0s cubic-bezier(0.165, 0.84, 0.44, 1) 0.25s, opacity 0.25s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.25s cubic-bezier(0.165, 0.84, 0.44, 1));
+        @include transform(translate(0, -5px));
+    }
+    100% {
+        @include opacity(1);
+        @include transition(visibility 0s cubic-bezier(0.165, 0.84, 0.44, 1) 0s, opacity 0.25s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.25s cubic-bezier(0.165, 0.84, 0.44, 1));
+        @include transform(translate(0, 0));
+    }
+}
+
+@keyframes opacity-transition-animation {
+    0% {
+        @include opacity(0);
+        @include transition(0.3s all);
+    }
+    100% {
+        @include opacity(1);
+        @include transition(0.3s all);
+    }
+}

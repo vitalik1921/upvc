@@ -1,0 +1,34 @@
+@import "../../../../scss/core/_variables.scss";
+@import "../../../../scss/core/_mixins.scss";
+//
+//
+//
+.b-text {
+	h1 {
+		font-family: 'Arial-BoldMT';
+		font-size: 30px;
+		line-height: 35px;
+		margin-bottom: 20px;
+	}
+	p {
+		font-size: 14px;
+		line-height: 16px;
+		margin-bottom: 12px;
+	}
+	q {
+		p {
+			font-family: 'Arial-ItalicMT';
+			&:before {
+				content: '>>';
+			}
+			&:after {
+				content: '<<';
+			}
+		}
+	}
+
+	&__red {
+		color: #EE2D30;
+	}
+	
+}

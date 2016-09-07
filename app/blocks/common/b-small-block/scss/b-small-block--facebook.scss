@@ -1,0 +1,17 @@
+@import "../../../../scss/core/_variables.scss";
+@import "../../../../scss/core/_mixins.scss";
+//
+//
+//
+.b-small-block--facebook {
+	.b-small-block {
+		&__link {
+			@include hide-text();
+			display: block;
+			width: 193px;
+			height: 65px;
+			background: url('../img/facebook.svg') 0 0 no-repeat;
+			background-size: contain;
+		}
+	}
+}
