@@ -1,0 +1,22 @@
+@import "../../../../scss/core/_variables.scss";
+@import "../../../../scss/core/_mixins.scss";
+//
+//
+//
+.l-footer {
+    &__top {
+        position: relative;
+        // height: 32px;
+        background-color: #414042;
+        &__container {
+            @include container;
+        }
+    }
+    &__bottom {
+    	background: rgba(0,0,0,0.9);
+    	// height: 96px;
+        &__container {
+            @include container;
+        }
+    }
+}

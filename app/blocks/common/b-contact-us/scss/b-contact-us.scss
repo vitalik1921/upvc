@@ -44,13 +44,40 @@
             margin-bottom: 7px;
         }
         &__field {
-        	font-weight: bold;
-        	width: 100%;
-        	border: none;
-        	outline: none;
-        	
+            font-family: 'ArialMT';
+            width: 100%;
+            border: none;
+            outline: none;
+            height: 38px;
+            padding-left: 5px;
+            padding-right: 5px;
+            color: #fff;
+            background-color: #58595B;
+            margin-bottom: 7px;
         }
-        &__textarea {}
-        &__button {}
+        &__textarea {
+            font-family: 'ArialMT';
+            width: 100%;
+            border: none;
+            outline: none;
+            height: 110px;
+            padding: 5px;
+            color: #fff;
+            background-color: #58595B;
+            margin-bottom: 7px;
+            resize: none;
+        }
+        &__button {
+            font-family: 'Arial-BoldMT';
+            font-size: 18px;
+            width: 100%;
+            border: none;
+            outline: none;
+            height: 52px;
+            line-height: 50px;
+            background-color: #EB3037;
+            color: #fff;
+            text-transform: uppercase;
+        }
     }
 }
