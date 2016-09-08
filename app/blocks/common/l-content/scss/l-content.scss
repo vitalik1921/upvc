@@ -7,4 +7,18 @@
 	&__container {
 		@include container;
 	}
+	&__content {
+		@include make-row();
+		padding-top: 48px;
+		padding-bottom: 52px;
+
+		&__b-article {
+			@include make-xs-column(8);
+
+		}
+		&__b-contact-us {
+			@include make-xs-column(4);
+
+		}
+	}
 }

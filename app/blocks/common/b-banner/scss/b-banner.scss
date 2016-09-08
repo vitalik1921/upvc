@@ -3,21 +3,41 @@
 //
 //
 //
+@media (max-width: $screen-md-max) {
+    .b-banner {
+    &__left {
+        width: 548px !important;
+        height: 317px !important;
+    }
+    &__right {
+        width: 400px !important;
+        height: 380px !important;
+    }
+}
+
+}
 .b-banner {
-	&__container {
-		@include container-fixed;
-	}
-	&__left {
-		@include hide-text();
-		width: 548px;
-		height: 317px;
-		background: url('../img/slogan.svg') 0 0 no-repeat;
-		background-size: contain;
-	}
-	&__right {
-		width: 598px;
-		height: 317px;
-		background: rgba(255,255,255,0.8);
-		padding: 20px;
-	}
+    &__container {
+        @include container;
+        position: relative;
+    }
+    &__left {
+        @include hide-text();
+        width: 548px;
+        height: 317px;
+        background: url('../img/slogan.png') 0 0 no-repeat;
+        background-size: contain;
+        position: absolute;
+        left: 5px;
+        top: 158px;
+    }
+    &__right {
+        width: 598px;
+        height: 317px;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        position: absolute;
+        right: 15px;
+        top: 158px;
+    }
 }

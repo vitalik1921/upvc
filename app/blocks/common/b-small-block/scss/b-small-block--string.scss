@@ -9,11 +9,13 @@
 	font-size: 22px;
 	color: #fff;
 	height: 50px;
-	line-height: 50px;
+	line-height: 42px;
 	border-top: 4px solid #fff;
 	border-bottom: 4px solid #fff;
 	.b-small-block {
 		&__red {
+			display: inline-block;
+			vertical-align: middle;
 			color: #EE2D30;
 		}
 	}

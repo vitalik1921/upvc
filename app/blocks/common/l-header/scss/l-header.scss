@@ -3,20 +3,89 @@
 //
 //
 //
+@media (max-width: $screen-md-max) {
+    .l-header {
+        &__top {
+            &__container {
+                height: 64px !important;
+            }
+            &__b-contact {
+                left: 15px !important;
+                top: 30px;
+            }
+        }
+        &__bottom {
+            &__b-small-block--string {
+                display: none;
+            }
+        }
+        &__b-banner {}
+    }
+}
+
 .l-header {
     &__top {
         position: relative;
-        // height: 32px;
         background-color: #414042;
         &__container {
             @include container;
+            position: relative;
+            display: flex;
+            height: 32px;
+        }
+        &__b-menu {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            position: absolute;
+            left: 15px;
+            height: 32px;
+        }
+        &__b-contact {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            position: absolute;
+            right: 15px;
+            height: 32px;
         }
     }
     &__bottom {
-    	background: rgba(0,0,0,0.9);
-    	// height: 96px;
+        position: relative;
+        z-index: 2;
+        background: rgba(0, 0, 0, 0.9);
+        height: 96px;
         &__container {
             @include container;
+            position: relative;
         }
+        &__b-logo {
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
+        &__b-small-block--string {
+            position: absolute;
+            left: 210px;
+            top: 24px;
+        }
+        &__b-small-block--facebook {
+            position: absolute;
+            right: 245px;
+            top: 17px;
+        }
+        &__b-small-block--call-us {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+        }
+    }
+    &__b-banner {
+        height: 686px;
+        background: url('../img/rain_bg.jpg') 0 0 no-repeat;
+        background-size: cover;
+        position: relative;
+        top: -96px;
+        margin-bottom: -96px;
     }
 }

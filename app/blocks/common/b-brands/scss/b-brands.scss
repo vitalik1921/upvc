@@ -4,12 +4,19 @@
 //
 //
 .b-brands {
+    background-color: #E6E7E8;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    &__container {
+        @include container;
+    }
     &__title {
         font-family: 'Arial-BoldMT';
         font-size: 25px;
         line-height: 28px;
         text-transform: uppercase;
         text-align: center;
+        margin-top: 0;
         margin-bottom: 35px;
     }
     &__items {

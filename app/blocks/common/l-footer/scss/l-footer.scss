@@ -3,20 +3,78 @@
 //
 //
 //
+@media (max-width: $screen-md-max) {
+    .l-footer {
+        &__top {
+            &__b-small-block--string {
+                display: none;
+            }
+        }
+        &__bottom {
+            &__container {
+                height: 80px !important;
+            }
+            &__b-contact {
+                left: 15px !important;
+                top: 30px;
+            }
+        }
+    }
+}
+
 .l-footer {
     &__top {
-        position: relative;
-        // height: 32px;
         background-color: #414042;
+        height: 147px;
         &__container {
             @include container;
+            position: relative;
+        }
+        &__b-logo {
+            position: absolute;
+            left: 15px;
+            top: 45px;
+        }
+        &__b-small-block--string {
+            position: absolute;
+            left: 210px;
+            top: 54px;
+        }
+        &__b-small-block--facebook {
+            position: absolute;
+            right: 245px;
+            top: 47px;
+        }
+        &__b-small-block--call-us {
+            position: absolute;
+            right: 15px;
+            top: 45px;
         }
     }
     &__bottom {
-    	background: rgba(0,0,0,0.9);
-    	// height: 96px;
+        position: relative;
+        background: rgba(0, 0, 0, 0.9);
         &__container {
             @include container;
+            position: relative;
+            display: flex;
+            height: 46px;
+        }
+        &__b-menu {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            position: absolute;
+            left: 15px;
+            height: 46px;
+        }
+        &__b-contact {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            position: absolute;
+            right: 15px;
+            height: 46px;
         }
     }
 }
