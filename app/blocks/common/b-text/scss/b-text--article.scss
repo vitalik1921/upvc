@@ -29,10 +29,12 @@
         	color: #58595B;
         }
     }
-    h6 {
+    h6, h6 > a {
         font-family: 'Arial-BoldMT';
         font-size: 14px;
         line-height: 16px;
         text-transform: uppercase;
+        color: #000;
+        text-decoration: none;
     }
 }
