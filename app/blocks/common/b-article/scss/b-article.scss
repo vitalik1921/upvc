@@ -1,0 +1,24 @@
+@import "../../../../scss/core/_variables.scss";
+@import "../../../../scss/core/_mixins.scss";
+//
+//
+//
+.b-article {
+    @include make-row();
+    &__title {
+        @include make-xs-column(12);
+        font-family: 'Arial-BoldMT';
+        font-size: 25px;
+        line-height: 28px;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        margin-top: 0;
+    }
+    &__left {
+        @include make-xs-column(6);
+
+    }
+    &__right {
+        @include make-xs-column(6);
+    }
+}

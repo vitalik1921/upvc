@@ -1,0 +1,38 @@
+@import "../../../../scss/core/_variables.scss";
+@import "../../../../scss/core/_mixins.scss";
+//
+//
+//
+.b-text--article {
+    q {
+    	display: block;
+    	margin-bottom: 18px;
+    	font-family: 'Arial-ItalicMT';
+    	font-size: 14px;
+    	line-height: 16px;
+        &:before,
+        &.after {
+            display: none;
+        }
+        p {
+        	margin-bottom: 12px;
+        	&:before {
+        		content: open-quote;
+        	}
+        	&:after {
+        		content: close-quote;
+        	}
+        }
+        span {
+        	display: block;
+        	font-family: 'Arial-BoldMT';
+        	color: #58595B;
+        }
+    }
+    h6 {
+        font-family: 'Arial-BoldMT';
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+    }
+}

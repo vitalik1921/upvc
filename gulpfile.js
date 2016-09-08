@@ -130,10 +130,9 @@ gulp.task('templates', function() {
 
 
 gulp.task('default', function() {
-    gulp.run('blocks.block-scripts', 'blocks.widget-scripts', 'blocks.styles', 'blocks.images', 'fonts', 'scripts', 'images', 'styles', 'templates');
+    gulp.run('watch', 'blocks.block-scripts', 'blocks.widget-scripts', 'blocks.styles', 'blocks.images', 'fonts', 'scripts', 'images', 'styles', 'templates');
 
     livereload.listen();
-
     /* Blocks */
 
     gulp.watch('app/blocks/**/b-**/js/*.js', function(event) {

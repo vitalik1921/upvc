@@ -18,12 +18,9 @@
 	q {
 		p {
 			font-family: 'Arial-ItalicMT';
-			&:before {
-				content: '>>';
-			}
-			&:after {
-				content: '<<';
-			}
+		}
+		span {
+			
 		}
 	}
 
